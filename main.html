@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Company</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/155dbb4a48.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/155dbb4a48.js" crossorigin="anonymous"></script>
+
+    <style>
+        
+        .mobile-close-btn {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 32px;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 52px;
+            min-height: 52px;
+        }
+
+        .mobile-close-btn:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: scale(1.1) rotate(90deg);
+            color: #05c2c9;
+        }
+
+        .mobile-close-btn:focus {
+            outline: 2px solid #05c2c9;
+            outline-offset: 2px;
+        }
+
+        .mobile-close-btn i {
+            transition: transform 0.3s ease;
+        }
+
+        
+        .mobile-nav.mobile-nav-active .mobile-close-btn {
+            opacity: 0;
+            transform: scale(0.8) rotate(-90deg);
+            animation: closeButtonSlideIn 0.5s ease forwards 0.2s;
+        }
+
+        @keyframes closeButtonSlideIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8) rotate(-90deg);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-title">
+            <h1>M.N INSURANCE</h1>
+            <div class="burger-menu" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+        </div>
+    <hr class="mobile_separator1">
+        
+        
+        
+
+    <img class="logo-icon" src="assets/icon.png">
+    
+    <nav class="header-nav" aria-label="Main Navigation">
+        <ul class="header-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-close-btn" onclick="closeMobileMenu()" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    </header>
+    <hr class="separator1">
+
+    <main class="container">
+
+        <!-- ============================================ -->
+        <!--                   HOME                   -->
+        <!-- ============================================ -->
+
+        <section id="home" class="home_container">
+            <div class="welcome_box">
+                <h1>~ WELCOME ~</h1>
+                <hr>
+                <p>Life is unpredictable, but your protection doesn't have to be.
+                    As a freelance insurance professional, I'm passionate about helping you navigate the world of risk
+                    and
+                    find the perfect coverage for what matters most. Whether you're a trucker hauling precious cargo,
+                    a family looking to secure your future, or a homeowner protecting your biggest investment,
+                    I'm here to offer personalized solutions tailored to your unique needs. I believe in building
+                    relationships,
+                    not just selling policies. Let's chat about your concerns â€" from your vehicle to your health,
+                    your property to your peace of mind â€" and find the right fit for you.
+                    Because when it comes to safeguarding your dreams, you deserve a partner who's got your back.
+                </p>
+                <hr>
+                <div class="services-icons">
+                    <img src="assets/health-insurance.png" alt="health">
+                    <img src="assets/insurance.png" alt="vehicles">
+                    <img src="assets/ship.png" alt="cargo">
+                    <img src="assets/property-insurance.png" alt="property">
+                    <img src="assets/renewable-energy.png" alt="energy">
+                    <img src="assets/claim.png" alt="liability">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================================ -->
+        <!--                   Services                   -->
+        <!-- ============================================ -->
+
+
+        <section id="services" class="services_container">
+            <div class="services_header">
+                <h2 class="section-title visually-hidden">Our Insurance Services</h2>
+            </div>
+            <div class="Motor_Box">
+                <h2>MOTOR INSURANCE
+                    <li>Cars</li>
+                    <li>Motor</li>
+                    <li>Trucks</li>
+                    <li>Buses</li>
+                    <li>Taxi</li>
+                    <li>Tugs</li>
+                </h2>
+                
+            </div>
+
+
+            <div class="Cargo_Box">
+                <h2>CARGO INSURANCE
+                    <li>Industrial Products</li>
+                    <li>Raw Materials</li>
+                    <li>Fuel</li>
+                    <li>Machinery</li>
+                    <li>Jewelry</li>
+                    <li>Food</li>
+                    <li>Agricultural Products</li>
+                    <li>Artwork</li>
+                    <span class="Cargo-info">
+                        <strong>Clause A:</strong> Covers all risks. <br>
+                        <strong>Clause B:</strong> Covers specific risks, offering moderate protection. <br>
+                        <strong>Clause C:</strong> Covers limited risks.
+                    </span>
+                </h2>
+            </div>
+
+            <div class="Liability_Box">
+                <h2>LIABILITY INSURANCE
+                    <li>General Liability</li>
+                    <li>Professional Liability</li>
+                    <li>Employer's Liability</li>
+                    <li>Product Liability</li>
+                    <span class="Liability-info">
+                        <p>
+                            <strong>Liability insurance</strong> provides financial protection for <u>professionals and businesses</u>
+                            against legal claims from third parties. It covers various professions, including doctors, 
+                            lawyers, accountants, construction workers, and industries such as hospitality, workshops, 
+                            and industrial sectors.
+                        </p>
+                    </span>
+                </h2>
+            </div>
+            
+            <div class="Yacht_Box">
+                <h2>YACHT INSURANCE
+                    <span class="Yacht-info">
+                        <p>We experience numerous accidents that impact our lives, many of which we cant control to some
+                            extent.
+                            However, our relationship with the sea is far more complex.
+                            not only we are not welcomed here but we often act like parasites within the realm of
+                            Poseidone.
+                            From the catastrophic collapse of bridge of Baltimore (costing billions in insurance
+                            payouts) to the challenges posed by phenomena like the Houthi attacks
+                            , the sea remains an unpredictable force.
+                            The goal should always be to ensure that, no matter the loss, we can return to the same
+                            financial position we were in before disaster struck.
+                            Resilience and preparedness are not just optionsâ€"they are necessities when dealing with the
+                            might of the sea.</p>
+                    </span>
+                </h2>
+            </div>
+            <button id="scrollToServices2" class="down-button" type="button""><img src="assets/unfold_white.png" alt="Scroll Down"></button>
+            
+        </section>
+
+
+        <!-- Services Page 2 -->
+
+        <section id="services2" class="services_container">
+            <div class="services_header">
+                <h2 class="section-title visually-hidden">Additional Insurance Services</h2>
+            </div>
+            <div class="Property_Box">
+                <h2>PROPERTY INSURANCE</h2>
+
+                <li>Residential Property</li>
+                <li>Business Property</li>
+                <li>Hotels</li>
+            </div>
+
+            <div class="Energy_Box">
+                <h2>ENERGY RELATED INSURANCE</h2>
+                <li>Wind Turbines</li>
+                <li>Photovoltaic(PV) Panels</li>
+                <span class="Energy-info">
+                    <p>Energy is the driving force of the past, present, and future.
+                        Greece possesses significant potential in the renewable energy sector,
+                        largely due to its favorable geographical and climatic conditions.
+                        This potential positions Greece as a key player in the transition to sustainable energy.</p>
+                </span>
+            </div>
+
+            <div class="Health_Box">
+                <h2>HEALTH INSURANCE</h2>
+                <li>Life and Medical</li>
+                <li>Pension</li>
+                <span class="Health-info">
+                    <p>We offer the selection of both Greek and international market.</p>
+                </span>
+            </div>
+            <button id="scrollToServices1" class="up-button" type="button""><img src="assets/unfold_white.png" alt="Scroll Up"></button>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                   About                      -->
+        <!-- ============================================ -->
+
+
+        <section id="about" class="about_container">
+            <div class="about_us_box">
+                <h1>About Us</h1>
+                <hr class="separator3">
+                <p><strong>Meintanis Insurance Services</strong> has been a trusted provider of comprehensive insurance
+                    solutions since 2006,
+                    catering to both individuals and businesses. From motor and cargo insurance to financial consulting,
+                    we are committed to delivering stability, confidence, and expert guidance.
+                    Our dedicated team is fully certified by the Bank of Greece and continuously enhances
+                    its knowledge by attending seminars and industry events. This ensures we stay ahead of market
+                    trends,
+                    providing our clients with informed, strategic solutions.
+                    If you need expert advice or a tailored insurance plan, donâ€™t hesitate to reach outâ€"weâ€™re here to
+                    help you secure your future.</p>
+            </div>
+            <div class="map-container">
+                <h1>FIND US</h1>
+                <hr>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12506.292196271464!2d24.029252919090737!3d38.40511981445526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a15dfa6fb9bc65%3A0x41d3d57b479da3f8!2zzpHOu865zrLOrc-BzrkgMzQ1IDAw!5e0!3m2!1sel!2sgr!4v1739468574238!5m2!1sel!2sgr"
+                    allowfullscreen="" loading="lazy"></iframe>"
+
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                   Contact                    -->
+        <!-- ============================================ -->
+        <section id="contact" class="contact_container">
+            <div class="contact_box">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                    <div class="contact-left-title">
+                        <h2>Get in touch</h2>
+                        <hr>
+                    </div>
+                    <input type="hidden" name="access_key" value="ec8f5293-6c5b-4040-ae63-89df8e7b13ea">
+                    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                    <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                    <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                    <button type="submit">Submit <img src="assets/arrow_icon.png" alt=""></button>
+                </form>
+                <div class="contact-right">
+                    <div class="contact-right-title">
+                        <h2>Personal Information</h2>
+                        <hr>
+                    </div>
+                    <div class="personal-info-box">
+                        
+                        <ul>
+                            <li>General Information:
+                                <strong class="copy-number" onclick="copyToClipboard(this)">2223022976</strong>
+                            </li>
+                            <li>For property, cargo, yachts and energy related matters:
+                                <strong class="copy-number" onclick="copyToClipboard(this)">+30 6985632874</strong>
+                            </li>
+                            <li>For motor, health, liability, consulting and tax services:
+                                <strong class="copy-number" onclick="copyToClipboard(this)">+30 6974261468</strong>
+                            </li>
+                            <li>Email:
+                                <strong class="copy-number"
+                                    onclick="copyToClipboard(this)">meintanisinsurance@outlook.com.gr</strong>
+                            </li>
+                        </ul>
+                    </div>
+        </section>
+
+    </main>
+</body>
+
+</html>

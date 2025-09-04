@@ -1,4 +1,3 @@
-// Enhanced Hamburger Menu JavaScript
 
 // Enhanced mobile menu toggle with smooth animations
 function toggleMobileMenu() {
@@ -71,7 +70,7 @@ function closeMobileMenu() {
         
         // Remove escape key listener
         document.removeEventListener('keydown', handleEscapeKey);
-    }, 300);
+    }, 10);
 }
 
 function createMobileOverlay() {
@@ -114,7 +113,7 @@ function scrollToSection(sectionId) {
     if (mobileNav && mobileNav.classList.contains('mobile-nav-active')) {
         closeMobileMenu();
         // Add small delay after closing menu to ensure smooth scroll
-        setTimeout(() => performScroll(), 400);
+        setTimeout(() => performScroll(), 11);
     } else {
         performScroll();
     }

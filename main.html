@@ -4,83 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insurance Company</title>
+    <meta name="description" content="M.N Insurance - Personalized Insurance Solutions for Individuals and Businesses">
+    <meta name="keywords" content="insurance, motor insurance, cargo insurance, liability insurance, yacht insurance, property insurance, health insurance, Greece">
+    <title>M.N Insurance Company</title>
+    
+    <!-- External Resources -->
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/155dbb4a48.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/155dbb4a48.js" crossorigin="anonymous"></script>
-
-    <style>
-        
-        .mobile-close-btn {
-            position: absolute;
-            top: 30px;
-            right: 30px;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 32px;
-            cursor: pointer;
-            padding: 10px;
-            border-radius: 50%;
-            transition: all 0.3s ease;
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-width: 52px;
-            min-height: 52px;
-        }
-
-        .mobile-close-btn:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-            transform: scale(1.1) rotate(90deg);
-            color: #05c2c9;
-        }
-
-        .mobile-close-btn:focus {
-            outline: 2px solid #05c2c9;
-            outline-offset: 2px;
-        }
-
-        .mobile-close-btn i {
-            transition: transform 0.3s ease;
-        }
-
-        
-        .mobile-nav.mobile-nav-active .mobile-close-btn {
-            opacity: 0;
-            transform: scale(0.8) rotate(-90deg);
-            animation: closeButtonSlideIn 0.5s ease forwards 0.2s;
-        }
-
-        @keyframes closeButtonSlideIn {
-            from {
-                opacity: 0;
-                transform: scale(0.8) rotate(-90deg);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1) rotate(0deg);
-            }
-        }
-    </style>
 </head>
 
 <body>
+     <!-- Header Section -->
     <header class="header">
         <div class="header-title">
             <h1>M.N INSURANCE</h1>
+            
             <div class="burger-menu" onclick="toggleMobileMenu()">
                 <i class="fas fa-bars"></i>
             </div>
-            
         </div>
-    <hr class="mobile_separator1">
-        
-        
-        
-
+    
+        <hr class="mobile_separator1">
     <img class="logo-icon" src="assets/icon.png">
     
     <nav class="header-nav" aria-label="Main Navigation">
@@ -91,6 +36,8 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- Mobile Navigation Overlay -->
     <div class="mobile-nav" id="mobileNav">
         <button class="mobile-close-btn" onclick="closeMobileMenu()" aria-label="Close menu">
             <i class="fas fa-times"></i>
@@ -103,13 +50,13 @@
         </ul>
     </div>
     </header>
+    
     <hr class="separator1">
 
+    <!-- Main Content -->
     <main class="container">
 
-        <!-- ============================================ -->
-        <!--                   HOME                   -->
-        <!-- ============================================ -->
+        <!-- Home Section -->
 
         <section id="home" class="home_container">
             <div class="welcome_box">
@@ -122,8 +69,8 @@
                     a family looking to secure your future, or a homeowner protecting your biggest investment,
                     I'm here to offer personalized solutions tailored to your unique needs. I believe in building
                     relationships,
-                    not just selling policies. Let's chat about your concerns â€" from your vehicle to your health,
-                    your property to your peace of mind â€" and find the right fit for you.
+                    not just selling policies. Let's chat about your concerns from your vehicle to your health,
+                    your property to your peace of mind and find the right fit for you.
                     Because when it comes to safeguarding your dreams, you deserve a partner who's got your back.
                 </p>
                 <hr>
@@ -139,15 +86,15 @@
         </section>
 
 
-        <!-- ============================================ -->
-        <!--                   Services                   -->
-        <!-- ============================================ -->
-
+        
+        <!-- Services Section -->
 
         <section id="services" class="services_container">
             <div class="services_header">
                 <h2 class="section-title visually-hidden">Our Insurance Services</h2>
             </div>
+            
+            <!-- Motor Insurance -->
             <div class="Motor_Box">
                 <h2>MOTOR INSURANCE
                     <li>Cars</li>
@@ -160,7 +107,7 @@
                 
             </div>
 
-
+            <!-- Cargo Insurance -->
             <div class="Cargo_Box">
                 <h2>CARGO INSURANCE
                     <li>Industrial Products</li>
@@ -179,6 +126,7 @@
                 </h2>
             </div>
 
+            <!-- Liability Insurance -->
             <div class="Liability_Box">
                 <h2>LIABILITY INSURANCE
                     <li>General Liability</li>
@@ -196,6 +144,7 @@
                 </h2>
             </div>
             
+            <!-- Yacht Insurance -->
             <div class="Yacht_Box">
                 <h2>YACHT INSURANCE
                     <span class="Yacht-info">
@@ -209,7 +158,7 @@
                             , the sea remains an unpredictable force.
                             The goal should always be to ensure that, no matter the loss, we can return to the same
                             financial position we were in before disaster struck.
-                            Resilience and preparedness are not just optionsâ€"they are necessities when dealing with the
+                            Resilience and preparedness are not just options they are necessities when dealing with the
                             might of the sea.</p>
                     </span>
                 </h2>
@@ -219,7 +168,7 @@
         </section>
 
 
-        <!-- Services Page 2 -->
+        <!-- Services Section 2 -->
 
         <section id="services2" class="services_container">
             <div class="services_header">
@@ -233,6 +182,7 @@
                 <li>Hotels</li>
             </div>
 
+            <!-- Energy Insurance -->
             <div class="Energy_Box">
                 <h2>ENERGY RELATED INSURANCE</h2>
                 <li>Wind Turbines</li>
@@ -245,6 +195,7 @@
                 </span>
             </div>
 
+            <!-- Health Insurance -->
             <div class="Health_Box">
                 <h2>HEALTH INSURANCE</h2>
                 <li>Life and Medical</li>
@@ -256,11 +207,8 @@
             <button id="scrollToServices1" class="up-button" type="button""><img src="assets/unfold_white.png" alt="Scroll Up"></button>
         </section>
 
-        <!-- ============================================ -->
-        <!--                   About                      -->
-        <!-- ============================================ -->
 
-
+        <!-- About Section -->
         <section id="about" class="about_container">
             <div class="about_us_box">
                 <h1>About Us</h1>
@@ -273,7 +221,7 @@
                     its knowledge by attending seminars and industry events. This ensures we stay ahead of market
                     trends,
                     providing our clients with informed, strategic solutions.
-                    If you need expert advice or a tailored insurance plan, donâ€™t hesitate to reach outâ€"weâ€™re here to
+                    If you need expert advice or a tailored insurance plan, don't hesitate to reach out we are here to
                     help you secure your future.</p>
             </div>
             <div class="map-container">
@@ -286,9 +234,7 @@
             </div>
         </section>
 
-        <!-- ============================================ -->
-        <!--                   Contact                    -->
-        <!-- ============================================ -->
+        <!-- Contact Section -->
         <section id="contact" class="contact_container">
             <div class="contact_box">
                 <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
@@ -328,6 +274,8 @@
         </section>
 
     </main>
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
 </body>
 
 </html>

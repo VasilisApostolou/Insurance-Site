@@ -229,13 +229,6 @@
             <div class="map-container">
                 <h1>FIND US</h1>
                 <hr>
-                <!--
-                    GDPR-compliant map loading:
-                    - src is empty on page load so Google Maps does NOT load any cookies
-                    - data-src holds the real URL
-                    - JS only sets src = data-src AFTER the user clicks "Accept" in the cookie banner
-                    - The placeholder div is shown until then
-                -->
                 <div id="map-placeholder" class="map-placeholder">
                     <p>This map uses Google cookies.<br>Accept cookies below to view it.</p>
                     <button onclick="acceptCookies()">Accept &amp; Show Map</button>
@@ -318,11 +311,6 @@
         <i class="fas fa-chevron-up"></i>
     </button>
 
-    <!--
-        GDPR Cookie Consent Banner
-        JS checks localStorage on load. If the user already chose, this stays hidden.
-        Only shown on first visit or after clearing browser data.
-    -->
     <div id="cookie-banner" class="cookie-banner">
         <p>We use cookies to display an interactive map (Google Maps).
            By accepting, you agree to Google's use of cookies.</p>
@@ -334,3 +322,4 @@
 
 </body>
 </html>
+

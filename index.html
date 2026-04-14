@@ -41,12 +41,23 @@
 
         <nav class="header-nav" aria-label="Main Navigation">
             <ul class="header-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home"     data-i18n="nav_home">Home</a></li>
+                <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                <li><a href="#about"    data-i18n="nav_about">About Us</a></li>
+                <li><a href="#contact"  data-i18n="nav_contact">Contact</a></li>
             </ul>
         </nav>
+
+        <!--
+            Language toggle button.
+            It sits in the header between the nav and the burger (on mobile).
+            JS reads its data-lang attribute to know the CURRENT language,
+            and flips it on each click.
+        -->
+        <button id="lang-toggle" class="lang-toggle" data-lang="en" aria-label="Switch language">
+            <span class="lang-flag">🇬🇷</span>
+            <span class="lang-label">ΕΛ</span>
+        </button>
 
         <!-- Mobile Navigation Overlay -->
         <div class="mobile-nav" id="mobileNav">
@@ -54,10 +65,10 @@
                 <i class="fas fa-times"></i>
             </button>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home"     data-i18n="nav_home">Home</a></li>
+                <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                <li><a href="#about"    data-i18n="nav_about">About Us</a></li>
+                <li><a href="#contact"  data-i18n="nav_contact">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -70,9 +81,9 @@
         <!-- Home Section -->
         <section id="home" class="home_container">
             <div class="welcome_box">
-                <h1>~ WELCOME ~</h1>
+                <h1 data-i18n="home_title">~ WELCOME ~</h1>
                 <hr>
-                <p>Life is unpredictable, but your protection doesn't have to be.
+                <p data-i18n="home_intro">Life is unpredictable, but your protection doesn't have to be.
                     As an insurance brokering company, we are passionate about helping you navigate the world of risk
                     and find the perfect coverage for what matters most. Whether you're a trucker hauling precious cargo,
                     a family looking to secure your future, or a homeowner protecting your biggest investment,
@@ -95,50 +106,50 @@
         <!-- Services Section 1 -->
         <section id="services" class="services_container">
             <div class="services_header">
-                <h2 class="section-title visually-hidden">Our Insurance Services</h2>
+                <h2 class="section-title visually-hidden" data-i18n="services_title">Our Insurance Services</h2>
             </div>
 
             <div class="Motor_Box">
-                <h2>MOTOR INSURANCE</h2>
+                <h2 data-i18n="motor_title">MOTOR INSURANCE</h2>
                 <ul>
-                    <li>Cars</li>
-                    <li>Motor</li>
-                    <li>Trucks</li>
-                    <li>Buses</li>
-                    <li>Taxi</li>
-                    <li>Tugs</li>
+                    <li data-i18n="motor_1">Cars</li>
+                    <li data-i18n="motor_2">Motor</li>
+                    <li data-i18n="motor_3">Trucks</li>
+                    <li data-i18n="motor_4">Buses</li>
+                    <li data-i18n="motor_5">Taxi</li>
+                    <li data-i18n="motor_6">Tugs</li>
                 </ul>
             </div>
 
             <div class="Cargo_Box">
-                <h2>CARGO INSURANCE</h2>
+                <h2 data-i18n="cargo_title">CARGO INSURANCE</h2>
                 <ul>
-                    <li>Industrial Products</li>
-                    <li>Raw Materials</li>
-                    <li>Fuel</li>
-                    <li>Machinery</li>
-                    <li>Jewelry</li>
-                    <li>Food</li>
-                    <li>Agricultural Products</li>
-                    <li>Artwork</li>
+                    <li data-i18n="cargo_1">Industrial Products</li>
+                    <li data-i18n="cargo_2">Raw Materials</li>
+                    <li data-i18n="cargo_3">Fuel</li>
+                    <li data-i18n="cargo_4">Machinery</li>
+                    <li data-i18n="cargo_5">Jewelry</li>
+                    <li data-i18n="cargo_6">Food</li>
+                    <li data-i18n="cargo_7">Agricultural Products</li>
+                    <li data-i18n="cargo_8">Artwork</li>
                 </ul>
                 <span class="Cargo-info">
-                    <strong>Clause A:</strong> Covers all risks. <br>
-                    <strong>Clause B:</strong> Covers specific risks, offering moderate protection. <br>
-                    <strong>Clause C:</strong> Covers limited risks.
+                    <strong data-i18n="cargo_clause_a">Clause A: Covers all risks.</strong> <br>
+                    <strong data-i18n="cargo_clause_b">Clause B: Covers specific risks, offering moderate protection.</strong> <br>
+                    <strong data-i18n="cargo_clause_c">Clause C: Covers limited risks.</strong>
                 </span>
             </div>
 
             <div class="Liability_Box">
-                <h2>LIABILITY INSURANCE</h2>
+                <h2 data-i18n="liability_title">LIABILITY INSURANCE</h2>
                 <ul>
-                    <li>General Liability</li>
-                    <li>Professional Liability</li>
-                    <li>Employer's Liability</li>
-                    <li>Product Liability</li>
+                    <li data-i18n="liability_1">General Liability</li>
+                    <li data-i18n="liability_2">Professional Liability</li>
+                    <li data-i18n="liability_3">Employer's Liability</li>
+                    <li data-i18n="liability_4">Product Liability</li>
                 </ul>
                 <span class="Liability-info">
-                    <p>
+                    <p data-i18n="liability_info">
                         <strong>Liability insurance</strong> provides financial protection for
                         <u>professionals and businesses</u> against legal claims from third parties.
                         It covers various professions, including doctors, lawyers, accountants,
@@ -149,9 +160,9 @@
             </div>
 
             <div class="Yacht_Box">
-                <h2>YACHT INSURANCE</h2>
+                <h2 data-i18n="yacht_title">YACHT INSURANCE</h2>
                 <span class="Yacht-info">
-                    <p>We experience numerous accidents that impact our lives, many of which we can't control.
+                    <p data-i18n="yacht_info">We experience numerous accidents that impact our lives, many of which we can't control.
                         However, our relationship with the sea is far more complex —
                         not only are we not always welcomed here, but we operate within an unpredictable realm.
                         From the catastrophic collapse of the Baltimore bridge (costing billions in insurance payouts)
@@ -170,26 +181,26 @@
         <!-- Services Section 2 -->
         <section id="services2" class="services_container">
             <div class="services_header">
-                <h2 class="section-title visually-hidden">Additional Insurance Services</h2>
+                <h2 class="section-title visually-hidden" data-i18n="services2_title">Additional Insurance Services</h2>
             </div>
 
             <div class="Property_Box">
-                <h2>PROPERTY INSURANCE</h2>
+                <h2 data-i18n="property_title">PROPERTY INSURANCE</h2>
                 <ul>
-                    <li>Residential Property</li>
-                    <li>Business Property</li>
-                    <li>Hotels</li>
+                    <li data-i18n="property_1">Residential Property</li>
+                    <li data-i18n="property_2">Business Property</li>
+                    <li data-i18n="property_3">Hotels</li>
                 </ul>
             </div>
 
             <div class="Energy_Box">
-                <h2>ENERGY RELATED INSURANCE</h2>
+                <h2 data-i18n="energy_title">ENERGY RELATED INSURANCE</h2>
                 <ul>
-                    <li>Wind Turbines</li>
-                    <li>Photovoltaic (PV) Panels</li>
+                    <li data-i18n="energy_1">Wind Turbines</li>
+                    <li data-i18n="energy_2">Photovoltaic (PV) Panels</li>
                 </ul>
                 <span class="Energy-info">
-                    <p>Energy is the driving force of the past, present, and future.
+                    <p data-i18n="energy_info">Energy is the driving force of the past, present, and future.
                         Greece possesses significant potential in the renewable energy sector,
                         largely due to its favorable geographical and climatic conditions.
                         This potential positions Greece as a key player in the transition to sustainable energy.</p>
@@ -197,13 +208,13 @@
             </div>
 
             <div class="Health_Box">
-                <h2>HEALTH INSURANCE</h2>
+                <h2 data-i18n="health_title">HEALTH INSURANCE</h2>
                 <ul>
-                    <li>Life and Medical</li>
-                    <li>Pension</li>
+                    <li data-i18n="health_1">Life and Medical</li>
+                    <li data-i18n="health_2">Pension</li>
                 </ul>
                 <span class="Health-info">
-                    <p>We offer the selection of both Greek and international market.</p>
+                    <p data-i18n="health_info">We offer the selection of both Greek and international market.</p>
                 </span>
             </div>
 
@@ -215,9 +226,9 @@
         <!-- About Section -->
         <section id="about" class="about_container">
             <div class="about_us_box">
-                <h1>About Us</h1>
+                <h1 data-i18n="about_title">About Us</h1>
                 <hr class="separator3">
-                <p><strong>Meintanis Insurance Services</strong> has been a trusted provider of comprehensive insurance
+                <p data-i18n="about_text"><strong>Meintanis Insurance Services</strong> has been a trusted provider of comprehensive insurance
                     solutions since 2006, catering to both individuals and businesses. From motor and cargo insurance
                     to financial consulting, we are committed to delivering stability, confidence, and expert guidance.
                     Our dedicated team is fully certified by the Bank of Greece and continuously enhances
@@ -227,11 +238,11 @@
             </div>
 
             <div class="map-container">
-                <h1>FIND US</h1>
+                <h1 data-i18n="map_title">FIND US</h1>
                 <hr>
                 <div id="map-placeholder" class="map-placeholder">
-                    <p>This map uses Google cookies.<br>Accept cookies below to view it.</p>
-                    <button onclick="acceptCookies()">Accept &amp; Show Map</button>
+                    <p data-i18n="map_placeholder_text">This map uses Google cookies.<br>Accept cookies below to view it.</p>
+                    <button onclick="acceptCookies()" data-i18n="map_accept_btn">Accept &amp; Show Map</button>
                 </div>
                 <iframe
                     id="map-iframe"
@@ -250,7 +261,7 @@
             <div class="contact_box">
                 <form action="https://api.web3forms.com/submit" method="POST" class="contact-left" id="contact-form">
                     <div class="contact-left-title">
-                        <h2>Get in touch</h2>
+                        <h2 data-i18n="contact_form_title">Get in touch</h2>
                         <hr>
                     </div>
                     <input type="hidden" name="access_key" value="ec8f5293-6c5b-4040-ae63-89df8e7b13ea">
@@ -263,30 +274,30 @@
                 </form>
 
                 <!-- Shown by JS after submission — hidden by default via CSS display:none -->
-                <div id="form-success" class="form-success">
+                <div id="form-success" class="form-success" data-i18n="form_success">
                     ✓ Message sent! We'll be in touch within 24 hours.
                 </div>
-                <div id="form-error" class="form-error">
+                <div id="form-error" class="form-error" data-i18n="form_error">
                     Something went wrong. Please try calling us directly.
                 </div>
 
                 <div class="contact-right">
                     <div class="contact-right-title">
-                        <h2>Personal Information</h2>
+                        <h2 data-i18n="contact_info_title">Personal Information</h2>
                         <hr>
                     </div>
                     <div class="personal-info-box">
                         <ul>
-                            <li>General Information:
+                            <li><span data-i18n="contact_general">General Information:</span>
                                 <strong class="copy-number" onclick="copyToClipboard(this)" tabindex="0">2223022976</strong>
                             </li>
-                            <li>For property, cargo, yachts and energy related matters:
+                            <li><span data-i18n="contact_cargo_line">For property, cargo, yachts and energy related matters:</span>
                                 <strong class="copy-number" onclick="copyToClipboard(this)" tabindex="0">+30 6985632874</strong>
                             </li>
-                            <li>For motor, health, liability, consulting and tax services:
+                            <li><span data-i18n="contact_motor_line">For motor, health, liability, consulting and tax services:</span>
                                 <strong class="copy-number" onclick="copyToClipboard(this)" tabindex="0">+30 6974261468</strong>
                             </li>
-                            <li>Email:
+                            <li><span data-i18n="contact_email_label">Email:</span>
                                 <strong class="copy-number" onclick="copyToClipboard(this)" tabindex="0">meintanisinsurance@outlook.com.gr</strong>
                             </li>
                         </ul>

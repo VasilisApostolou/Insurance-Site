@@ -201,6 +201,19 @@ body.menu-open {
     }
 }
 
+/* ============================================
+   GLOBAL RESET — applies to ALL screen sizes
+   box-sizing: border-box means padding and border
+   are included in an element's total width/height,
+   rather than being added on top of it.
+   ============================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1692,4 +1705,69 @@ header h1:hover {
   /* Push floating buttons left of the screen edge a bit more */
   .whatsapp-btn { bottom: 20px; right: 20px; }
   #back-to-top  { bottom: 84px; right: 20px; }
+}
+
+/* ============================================================
+   LANGUAGE TOGGLE BUTTON
+   Sits in the header between the nav and the right edge.
+   On desktop: always visible, pill-shaped button.
+   On mobile: visible next to the burger menu in the header row.
+   ============================================================ */
+
+/* Desktop — inside the flex header */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.15s ease;
+  white-space: nowrap;
+  /* Push it away from the nav on desktop */
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.lang-toggle:hover {
+  background: rgba(5, 194, 201, 0.18);
+  border-color: #05c2c9;
+  transform: scale(1.05);
+}
+
+.lang-toggle:focus {
+  outline: 2px solid #05c2c9;
+  outline-offset: 2px;
+}
+
+.lang-flag {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.lang-label {
+  letter-spacing: 0.5px;
+}
+
+/* Mobile — sits in the header-title row beside the burger */
+@media (max-width: 810px) {
+  .lang-toggle {
+    /* Slightly smaller pill on mobile */
+    padding: 5px 11px;
+    font-size: 13px;
+    margin-right: 10px;
+    margin-top: 10px;
+    /* Keep it in the header-title flex row */
+    order: -1; /* appears to the left of the burger icon */
+  }
+
+  .lang-flag {
+    font-size: 16px;
+  }
 }

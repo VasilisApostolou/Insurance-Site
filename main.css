@@ -1050,7 +1050,7 @@ header h1:hover {
   }
 
   .mobile_separator1 {
-    width: 65%;
+    width: 90%;
     margin-right: 150px;
   }
 
@@ -1060,7 +1060,8 @@ header h1:hover {
 
 
   .home_container {
-  /*background-image: url(assets/Times\ Square\ New\ York892193500.jpg);*/
+  justify-content: flex-start;
+  padding-top: 40px;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1070,7 +1071,7 @@ header h1:hover {
     width: 90%;
     height: 50%;
     height: auto;
-    padding: 10px;
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 20px;
   }

@@ -19,8 +19,7 @@ const translations = {
 
         // --- Home ---
         home_title: "~ WELCOME ~",
-        home_intro: "Life is unpredictable, but your protection doesn't have to be. As an insurance brokering company, we are passionate about helping you navigate the world of risk and find the perfect coverage for what matters most. Whether you're a trucker hauling precious cargo, a family looking to secure your future, or a homeowner protecting your biggest investment, we are here to offer personalized solutions tailored to your unique needs. We believe in building relationships, not just selling policies, because when it comes to safeguarding your dreams, you deserve a partner who's got your back.
-
+        home_intro: "Life is unpredictable, but your protection doesn't have to be. As an insurance brokering company, we are passionate about helping you navigate the world of risk and find the perfect coverage for what matters most. Whether you're a trucker hauling precious cargo, a family looking to secure your future, or a homeowner protecting your biggest investment, we are here to offer personalized solutions tailored to your unique needs. We believe in building relationships, not just selling policies, because when it comes to safeguarding your dreams, you deserve a partner who's got your back.",
         // --- Services section 1 ---
         services_title: "Our Insurance Services",
         motor_title: "MOTOR INSURANCE",

@@ -201,12 +201,6 @@ body.menu-open {
     }
 }
 
-/* ============================================
-   GLOBAL RESET — applies to ALL screen sizes
-   box-sizing: border-box means padding and border
-   are included in an element's total width/height,
-   rather than being added on top of it.
-   ============================================ */
 * {
   margin: 0;
   padding: 0;
@@ -536,6 +530,16 @@ header h1:hover {
   padding: 2%;
 }
 
+.Motor_Box ul,
+  .Cargo_Box ul,
+  .Property_Box ul,
+  .Health_Box ul,
+  .Energy_Box ul,
+  .Liability_Box ul {
+    padding-left: 25px; /* Decrease this to push bullets left, increase to push right */
+    margin: 0;
+  }
+
 .Motor_Box li,
 .Cargo_Box li,
 .Property_Box li,
@@ -595,7 +599,7 @@ header h1:hover {
   width: 400px;
   position: absolute;
   z-index: 1;
-  transform: translateX(-50%) translateY(70px) translateX(-40px);
+  transform: translateX(-10%) translateY(30px) translateX(-10px);
   opacity: 0;
   transition: opacity 0.3s;
   text-shadow: 1px 1px 2px #000000;
@@ -1172,6 +1176,16 @@ header h1:hover {
     font-family: 'Montserrat';
     padding: 2%;
     font-size: 22px;
+  }
+
+  .Motor_Box ul,
+  .Cargo_Box ul,
+  .Property_Box ul,
+  .Health_Box ul,
+  .Energy_Box ul,
+  .Liability_Box ul {
+    padding-left: 15px; /* Decrease this to push bullets left, increase to push right */
+    margin: 0;
   }
 
   .Motor_Box li,

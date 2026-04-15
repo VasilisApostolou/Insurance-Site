@@ -178,22 +178,7 @@ const translations = {
     }
 };
 
-// ============================================================
-// i18n — apply translations to the DOM
-//
-// How it works:
-//   1. We query ALL elements with data-i18n or data-i18n-placeholder.
-//   2. For data-i18n: we set textContent to the translated string.
-//      NOTE: textContent replaces the ENTIRE text inside the element,
-//      including any child nodes. That's fine here because every
-//      data-i18n element contains only text (no children we care about).
-//   3. For data-i18n-placeholder: we set the placeholder attribute
-//      (used on <input> and <textarea> elements).
-//   4. We update <html lang="..."> so screen readers and browsers
-//      know the active language.
-//   5. We update the toggle button itself to show the OPPOSITE language
-//      (the one you'll switch TO next), acting as a label, not a state indicator.
-// ============================================================
+
 function applyTranslations(lang) {
     const dict = translations[lang];
     if (!dict) return;
@@ -229,13 +214,7 @@ function applyTranslations(lang) {
     }
 }
 
-// ============================================================
-// Language toggle — called when the button is clicked
-//
-// The button's data-lang always holds the CURRENT language.
-// We flip it, save to localStorage so the choice survives
-// page refreshes, then call applyTranslations().
-// ============================================================
+
 function initLangToggle() {
     const btn = document.getElementById('lang-toggle');
     if (!btn) return;
